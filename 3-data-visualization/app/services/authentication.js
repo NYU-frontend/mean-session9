@@ -1,7 +1,7 @@
 graphApp.factory('Authentication', 
 	function($firebase, 
 		$firebaseAuth, 
-		$routeParams,  
+		$routeParams, 
 		$location, 
 		FIREBASE_URL) {
 

@@ -1,7 +1,9 @@
-# Mean Session 9
+#Mean Session 9 Files
+* firebase reference section - https://www.firebase.com/docs/web/libraries/angular/api.html
+* firebase migration guide - https://www.firebase.com/docs/web/libraries/angular/migration-guides.html
 
-##Homework
-tbd
+* firebase auth - https://www.firebase.com/docs/web/libraries/angular/quickstart.html
+* firebase auth with password - https://www.firebase.com/docs/web/libraries/angular/api.html#angularfire-users-and-authentication-authwithpasswordcredentials-options
 
-
-
+And...
+* http://andyshora.com/promises-angularjs-explained-as-cartoon.html

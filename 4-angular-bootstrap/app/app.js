@@ -1,19 +1,39 @@
-var portfolioApp = angular.module('portfolioApp', 
-	['ngRoute','firebase']).constant('FIREBASE_URL', 'https://pirate-portfolio.firebaseio.com/');
+var graphApp = angular.module("graphApp",["ngRoute","appControllers","firebase"])
+.constant('FIREBASE_URL', 'https://vizapp.firebaseio.com/data');
 
-portfolioApp.config(function ($routeProvider) {
-    $routeProvider
-    .when("/portfolios",  { 
-        controller: "PortfolioListController", 
-        templateUrl: "app/partials/portfolios.html" })
+var appControllers = angular.module("appControllers", []);
 
-    .when("/portfolio/:portfolio_name",  { 
-        controller: "PortfolioViewController", 
-        templateUrl: "app/partials/portfolio.html"  })
+graphApp.config(["$routeProvider", function($routeProvider) {
 
-    .when("/",  { redirectTo: "/portfolios" })
-    .otherwise({ redirectTo: "/404_page" });
-});
+	$routeProvider.
+	when("/graph", {
+		templateUrl: "partials/graph.html",
+		controller: "graphControllers"
+	}).
+	when("/login", {
+		templateUrl: "partials/login.html",
+		controller: "registration"
+	}).
+	when("/register", {
+		templateUrl: "partials/register.html",
+		controller: "registration"
+	}).
+	otherwise({
+		redirectTo: "/login"
+	});
+
+}])
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,23 +1,34 @@
-<html ng-app="portfolioApp">
+<!doctype html>
+<html ng-app="graphApp"> 
+<head> 
+  <title>AngularJS Data Viz</title>             
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
 
-<head>
-	<link rel="stylesheet" type="text/css" href="css/_bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<script src="https://code.angularjs.org/1.4.2/angular.min.js"></script>
-	<script src="https://code.angularjs.org/1.4.2/angular-route.min.js"></script>
-	<script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
-	<script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/graphstyles.css">
 
-	<script src="app/app.js"></script>
-	<script src="app/controllers/portfoliolistcontroller.js"></script>
-	<script src="app/controllers/portfolioviewcontroller.js"></script>
+  <script src="https://code.angularjs.org/1.4.2/angular.js"></script>
+  <script src="https://code.angularjs.org/1.4.2/angular-route.js"></script>
 
-</head>
-<body>
+  <script src="app/app.js"></script>
+  <script src="app/services/authentication.js"></script>
+  <script src="app/controllers/controllers.js"></script>
+  <script src="app/controllers/registration.js"></script>
 
-<ng-view></ng-view>
-</body>
-</html>
+  <script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
+  <script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
+
+</head> 
+<body> 
+
+  <nav class="nav" ng-include="'partials/navigation.html'"></nav>
+
+  <main class="wrap" ng-view></main>
+
+</body> 
+</html> 
+
+
 
 
 

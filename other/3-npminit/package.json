@@ -1,0 +1,10 @@
+{
+  "name": "Test",
+  "version": "1.0.0",
+  "description": "Just testing",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
